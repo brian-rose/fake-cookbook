@@ -3,8 +3,8 @@ on:
   pull_request_target:
 
 jobs:
-  create-comment:
-    uses: brian-rose/fake-cookbook/.github/workflows/preview-comment.yaml@main
+  # create-comment:
+  #   uses: brian-rose/fake-cookbook/.github/workflows/preview-comment.yaml@main
 
   build-preview:
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
@@ -21,8 +21,8 @@ jobs:
       destination_dir: _preview/${{ github.event.number }} # deploy to subdirectory labeled with PR number
       is_preview: "false"  # deal with this later
 
-  finalize-comment:
-    needs: deploy-preview
-    uses: brian-rose/fake-cookbook/.github/workflows/preview-comment.yaml@main
-    with:
-      final: "true"
+  # finalize-comment:
+  #   needs: deploy-preview
+  #   uses: brian-rose/fake-cookbook/.github/workflows/preview-comment.yaml@main
+  #   with:
+  #     final: "true"
