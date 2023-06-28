@@ -2,7 +2,7 @@
 
 # A Fake Cookbook
 
-**HELLO! This is a fake book**
+**HELLO! This is a fake book, still**
 
 [![nightly-build](https://github.com/brian-rose/fake-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/brian-rose/fake-cookbook/actions/workflows/nightly-build.yaml)
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
