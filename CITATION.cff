@@ -8,6 +8,6 @@ authors:
     website: https://github.com/brian-rose # optional
     affiliation: University at Albany (State University of New York) # optional
   - name: "A Fake Cookbook" # use the 'name' field to acknowledge organizations
-    website: "https://github.com/ProjectPythia/cookbook-template/graphs/contributors"
+    website: "https://github.com/brian-rose/fake-cookbook/graphs/contributors"
 title: "Cookbook Template"
 abstract: "A sample cookbook description."
