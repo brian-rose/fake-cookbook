@@ -1,6 +1,6 @@
 name: stuff-on-pr
 on:
-  pull_request_trigger:
+  pull_request_target:
 
 jobs:
   say-hello:
