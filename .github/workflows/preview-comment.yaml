@@ -45,7 +45,7 @@ jobs:
         uses: peter-evans/find-comment@v2
         id: fc
         with:
-          issue-number: '$CI_PR_NUMBER'
+          issue-number: $CI_PR_NUMBER
           comment-author: 'github-actions[bot]'
           body-includes: '${{ env.comment_message }}'
 
