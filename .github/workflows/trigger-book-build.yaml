@@ -3,9 +3,26 @@ on:
   pull_request_target:
 
 jobs:
-  build:
+  create-comment:
+    uses: brian-rose/fake-cookbook/.github/workflows/preview-comment.yaml@main
+
+  build-preview:
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_name: cookbook-dev
       artifact_name: book-zip-${{ github.event.number }}
       # Other input options are possible, see ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml
+
+  deploy-preview:
+    needs: build-preview
+    uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
+    with:
+      artifact_name: book-zip-${{ github.event.number }}
+      destination_dir: _preview/${{ github.event.number }} # deploy to subdirectory labeled with PR number
+      is_preview: "false"  # deal with this later
+
+  finalize-comment:
+    needs: deploy-preview
+    uses: brian-rose/fake-cookbook/.github/workflows/preview-comment.yaml@main
+    with:
+      final: "true"
