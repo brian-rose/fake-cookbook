@@ -45,7 +45,7 @@ jobs:
         uses: peter-evans/find-comment@v2
         id: fc
         with:
-          issue-number: $CI_PR_NUMBER
+          issue-number: "$CI_PR_NUMBER"
           comment-author: 'github-actions[bot]'
           body-includes: '${{ env.comment_message }}'
 
@@ -55,7 +55,7 @@ jobs:
           && steps.fc.outputs.comment-id == ''
         uses: peter-evans/create-or-update-comment@v3
         with:
-          issue-number: $CI_PR_NUMBER
+          issue-number: "$CI_PR_NUMBER"
           body: |
             ${{ env.comment_message }}
             🔍 Git commit SHA: $CI_PR_SHA
