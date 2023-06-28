@@ -9,7 +9,7 @@ on:
 
 jobs:
   find-pull-request:
-    uses: brian-rose/fake-coobook/.github/workflows/find-pull-request.yaml@main
+    uses: brian-rose/fake-cookbook/.github/workflows/find-pull-request.yaml@main
   
   preview-comment:
     needs: find-pull-request
