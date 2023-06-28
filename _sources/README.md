@@ -1,10 +1,10 @@
 <img src="thumbnail.png" alt="thumbnail" width="300"/>
 
-# (Replace_with_your_title) Cookbook
+# A Fake Cookbook
 
-[![nightly-build](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/cookbook-template/actions/workflows/nightly-build.yaml)
+[![nightly-build](https://github.com/brian-rose/fake-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/brian-rose/fake-cookbook/actions/workflows/nightly-build.yaml)
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
-[![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
+[![DOI](https://zenodo.org/badge/659797688.svg)](https://zenodo.org/badge/latestdoi/659797688)
 
 This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., _working with radar data in Python_)
 
@@ -14,12 +14,12 @@ This Project Pythia Cookbook covers ... (replace `...` with the main subject of 
 
 ## Authors
 
-[First Author](@first-author), [Second Author](@second-author), etc. _Acknowledge primary content authors here_
+[Brian Rose](https://github.com/brian-rose)
 
 ### Contributors
 
-<a href="https://github.com/ProjectPythia/cookbook-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/cookbook-template" />
+<a href="https://github.com/brian-rose/fake-cookbook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=brian-rose/fake-cookbook" />
 </a>
 
 ## Structure
@@ -61,7 +61,7 @@ If you are interested in running this material locally on your computer, you wil
 
 (Replace "cookbook-example" with the title of your cookbooks)
 
-1. Clone the `https://github.com/ProjectPythia/cookbook-example` repository:
+1. Clone the `https://github.com/brian-rose/fake-cookbook` repository:
 
    ```bash
     git clone https://github.com/ProjectPythia/cookbook-example.git
