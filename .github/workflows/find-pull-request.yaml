@@ -14,12 +14,15 @@ jobs:
   find-pr:
     runs-on: ubuntu-latest
     outputs:
-      number: ${{ steps.find-pull-request.outputs.pullRequestNumber }}
-      sha: ${{ steps.find-pull-request.outputs.mergeCommitSha }}
+      number: ${{ env.CI_PR_NUMBER }}
+      sha: ${{ env.CI_PR_SHA }}
     steps:
-      - name: Find Pull Request
-        id: find-pull-request
-        uses: potiuk/get-workflow-origin@v1_5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          sourceRunId: ${{ github.event.workflow_run.id }}
+      - name: Get GitHub environment variables
+        id: get-env
+        uses: FranzDiebold/github-env-vars-action@v2
+      # - name: Find Pull Request
+      #   id: find-pull-request
+      #   uses: potiuk/get-workflow-origin@v1_5
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     sourceRunId: ${{ github.event.workflow_run.id }}
